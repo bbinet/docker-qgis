@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
 	dirmngr \
 	gnupg \
 	gdal-bin \
+	python-geopy \
 	--no-install-recommends \
 	&& apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 942D6AD5DF3E75DEA9AF72B2073D307A618E5811 \
 	&& echo "deb http://qgis.org/debian stretch main" >> /etc/apt/sources.list.d/qgis.list \
